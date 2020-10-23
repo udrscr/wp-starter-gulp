@@ -18,6 +18,9 @@
   "homepage": "https://github.com/udrscr/wp-starter-gulp#readme",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "4.0.2"
+    "gulp": "4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
   }
 }
