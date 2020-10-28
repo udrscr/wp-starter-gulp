@@ -1,5 +1,9 @@
 const { src, dest, parallel } = require('gulp');
 
+// TODO: Add header for style.css
+// TODO: Add process for assets
+// TODO: Add Husky for hooks
+
 const plumber = require('gulp-plumber');
 
 const sass = require('gulp-sass');
