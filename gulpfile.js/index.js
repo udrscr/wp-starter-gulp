@@ -4,6 +4,7 @@ const { src, dest, parallel } = require('gulp');
 // TODO: Add Husky for hooks
 
 const plumber = require('gulp-plumber');
+const log = require('fancy-log');
 
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
