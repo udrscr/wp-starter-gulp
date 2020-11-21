@@ -2,7 +2,9 @@
   "name": "wp-starter-gulp",
   "version": "1.0.0",
   "description": "WordPress theme starter with GulpJS task runner",
-  "scripts": {},
+  "scripts": {
+    "dev": "gulp dev"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/udrscr/wp-starter-gulp.git"
