@@ -45,14 +45,6 @@ function processJS() {
 };
 
 
-
-
-
-function gulpTask(cb) {
-  console.log('👋 Hello!');
-  cb();
-};
-
 function dev() {
   const settings = {
     queue: true
@@ -62,7 +54,7 @@ function dev() {
   watch(fileSRC.scssFiles, settings, processSCSS);
 };
 
-exports.default = gulpTask;
+exports.default = parallel(processSCSS, processJS);
 exports.compile = parallel(processSCSS, processJS);
 exports.dev = dev;
 

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "WordPress theme starter with GulpJS task runner",
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "prod": "gulp compile"
   },
   "repository": {
     "type": "git",
