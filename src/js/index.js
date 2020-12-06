@@ -1,3 +1,3 @@
 // Main JS file to be compiled
 // 
-const varia = 'something';
+const it = 'works';

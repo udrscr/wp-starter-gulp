@@ -9,14 +9,14 @@ const log = require('fancy-log');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 
-// const eslint = require('gulp-eslint');
+const babel = require("gulp-babel");
 
 // #####################################################################
 // Configs
 
 const fileSRC = {
   jsFiles: './src/js/*.js',
-  jsSRC: './src/js/index.js',
+  jsSRC: ['./src/js/index.js'],
   scssFiles: './src/scss/*.scss',
   scssSRC: './src/scss/style.scss'
 };
@@ -40,8 +40,7 @@ function processSCSS() {
 function processJS() {
   return src(fileSRC.jsSRC)
     .pipe(plumber({ errorHandler: handleError }))
-    // .pipe(eslint())
-    // .pipe(eslint.format())
+    .pipe(babel())
     .pipe(dest('.'))
     .on('end', function() {
       log('index.js created at location: "./index.js"');

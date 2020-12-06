@@ -1,3 +1,5 @@
+"use strict";
+
 // Main JS file to be compiled
 // 
-const varia = 'something';
+var it = 'works';
